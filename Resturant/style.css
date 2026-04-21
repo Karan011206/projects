@@ -2,24 +2,24 @@
 :root {
   --primary: #ff3b3f;
   --primary-dark: #c92a2e;
-  --dark: #0f0f0f;
-  --darker: #080808;
-  --light-bg: #121212;
-  --card-bg: #1c1c1c;
-  --text-muted: #bbbbbb;
-  --text-body: #e4e4e4;
-  --border: #2a2a2a;
-  --footer-bg: #000;
+  --dark: #fff8f0;
+  --darker: #ffe9d6;
+  --light-bg: #fff3e8;
+  --card-bg: #ffffff;
+  --text-muted: #5f5449;
+  --text-body: #2f241c;
+  --border: #ffd7b3;
+  --footer-bg: #2f241c;
 }
 
 body {
-  background: var(--dark);
+  background: linear-gradient(180deg, var(--dark) 0%, #fff 100%);
   color: var(--text-body);
   font-family: 'Lato', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #fff;
+  color: #2a1f17;
 }
 
 p, span {
@@ -27,14 +27,33 @@ p, span {
 }
 
 .site-navbar {
-  background: rgba(0,0,0,0.6);
+  background: rgba(255, 153, 51, 0.9);
   backdrop-filter: blur(8px);
 }
 
 .burger-section {
   min-height: 100vh;
-  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-              url("burger-bg.jpg") center/cover no-repeat;
+  background: linear-gradient(rgba(255, 140, 0, 0.25), rgba(255, 68, 68, 0.28)),
+              url("./burger-bg.jpg.jpeg") center/cover no-repeat;
+}
+
+.section-pad {
+  padding: 72px 0;
+}
+
+.offer-card h5,
+.food-card h5 {
+  color: #2a1f17;
+}
+
+.offer-card p,
+.food-card p {
+  color: #5f5449;
+}
+
+footer {
+  background: var(--footer-bg);
+  color: var(--text-muted);
 }
 
 .btn-primary-feane {
@@ -55,11 +74,12 @@ p, span {
 }
 
 .food-card, .offer-card, .book-form-wrap, .testimonial-card {
-  background: rgba(255,255,255,0.05);
-  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(3px);
   border: 1px solid var(--border);
   border-radius: 10px;
   transition: transform 0.3s;
+  box-shadow: 0 8px 24px rgba(255, 120, 0, 0.14);
 }
 
 .food-card:hover,
