@@ -1,3 +1,4 @@
+
 :root {
   --primary: #ff3b3f;
   --primary-dark: #c92a2e;
@@ -11,27 +12,62 @@
   --footer-bg: #000;
 }
 
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-
 body {
   background: var(--dark);
   color: var(--text-body);
   font-family: 'Lato', sans-serif;
 }
 
-
 h1, h2, h3, h4, h5, h6 {
   color: #fff;
-  font-family: 'Playfair Display', serif;
 }
 
-
 p, span {
+  color: var(--text-muted);
+}
+
+.site-navbar {
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(8px);
+}
+
+.hero-section {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+              url("hero-bg.jpg") center/cover no-repeat;
+}
+
+.btn-primary-feane {
+  display: inline-block;
+  background: linear-gradient(135deg, #ff3b3f, #ff7a18);
+  color: #fff;
+  padding: 14px 36px;
+  border-radius: 50px;
+  border: none;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: transform 0.2s;
+  box-shadow: 0 4px 20px rgba(255, 59, 63, 0.4);
+}
+
+.btn-primary-feane:hover {
+  transform: scale(1.05);
+}
+
+.food-card, .offer-card, .book-form-wrap, .testimonial-card {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.food-card:hover,
+.offer-card:hover {
+  transform: translateY(-8px) scale(1.02);
+}
+
+.footer {
+  background: var(--footer-bg);
   color: var(--text-muted);
 }
