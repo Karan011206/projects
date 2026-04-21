@@ -1,11 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>About — Feane Restaurant</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Lato:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+   
+    .value-card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 32px 24px;
+      text-align: center;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+      height: 100%;
+      transition: transform 0.2s;
+    }
+    .value-card:hover { transform: translateY(-4px); }
+    .value-icon {
+      width: 64px; height: 64px; border-radius: 50%;
+      background: #fdf8f2;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.8rem; margin: 0 auto 18px;
+    }
+    .value-card h5 { font-size: 1.05rem; font-weight: 700; margin-bottom: 10px; }
+    .value-card p { font-size: 0.88rem; color: #777; line-height: 1.7; margin: 0; }
+
+    .team-card { text-align: center; margin-bottom: 28px; }
+    .team-avatar {
+      width: 120px; height: 120px; border-radius: 50%; margin: 0 auto 16px;
+      background: linear-gradient(135deg, #e8a045, #c8832a);
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem; color: #fff; font-weight: 700;
+      box-shadow: 0 4px 16px rgba(232,160,69,0.35);
+    }
+    .team-card h5 { font-size: 1.05rem; font-weight: 700; margin-bottom: 4px; }
+    .team-card span { font-size: 0.85rem; color: #e8a045; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+
+    .timeline { position: relative; padding: 0; list-style: none; }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 24px;
+      top: 0; bottom: 0;
+      width: 2px;
+      background: #e8a045;
+      opacity: 0.3;
+    }
+    .timeline-item { display: flex; gap: 24px; margin-bottom: 36px; position: relative; }
+    .timeline-dot {
+      width: 48px; height: 48px; border-radius: 50%;
+      background: #e8a045; color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 0.85rem; font-weight: 700;
+      flex-shrink: 0; z-index: 1;
+    }
+    .timeline-body h6 { font-size: 1rem; font-weight: 700; margin-bottom: 6px; }
+    .timeline-body p { font-size: 0.88rem; color: #777; line-height: 1.65; margin: 0; }
+  </style>
 </head>
 <body>
-    
+
+ 
+  <div class="sub-hero">
+    <nav class="site-navbar navbar navbar-expand-lg" style="background: rgba(0,0,0,0.2);">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Feane</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMain">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+            <li class="nav-item active"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="book.html">Book Table</a></li>
+          </ul>
+          <div class="nav-actions">
+            <a href="#"><i class="bi bi-person"></i></a>
+            <a href="#"><i class="bi bi-bag"></i></a>
+            <a href="#" class="btn-order">Order Online</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <h1>About Us</h1>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active">About</li>
+      </ol>
+    </nav>
+  </div>
+
+  
+  <section class="about-section section-pad">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-5 mb-md-0">
+          <div class="about-img-wrap">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=700&q=80" alt="Feane Restaurant Interior" />
+            <div class="about-badge">
+              <span class="years">15+</span>
+              <span class="label">Years of Taste</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="about-detail">
+            <div class="section-heading left">
+              <h2>We Are Feane</h2>
+            </div>
+            <p>Founded in 2010 by chef Marco Reyes and his wife Elena, Feane started as a humble corner diner with ten tables and a menu of five dishes. The dream was simple: serve extraordinary food quickly, without ever compromising on quality or warmth.</p>
+            <p>Over fifteen years, that dream has grown into one of the most beloved fast-casual restaurants in the city — but our philosophy hasn't changed. Every morning we source fresh ingredients from local farms. Every plate is prepared with care and every guest is welcomed like family.</p>
+            <p>Today, Feane serves thousands of guests every week across multiple locations, yet we still treat every meal as if it's the first one we ever made.</p>
+            <div class="about-stats">
+              <div class="about-stat">
+                <span class="number">250+</span>
+                <span class="stat-label">Menu Items</span>
+              </div>
+              <div class="about-stat">
+                <span class="number">50k+</span>
+                <span class="stat-label">Happy Guests</span>
+              </div>
+              <div class="about-stat">
+                <span class="number">4</span>
+                <span class="stat-label">Locations</span>
+              </div>
+              <div class="about-stat">
+                <span class="number">15+</span>
+                <span class="stat-label">Years Open</span>
+              </div>
+            </div>
+            <a href="book.html" class="btn-primary-feane">Book A Table</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="section-pad" style="background: #fff;">
+    <div class="container">
+      <div class="section-heading">
+        <h2>What We Stand For</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="value-card">
+            <div class="value-icon">🌿</div>
+            <h5>Freshness First</h5>
+            <p>We partner with local farms to source the freshest seasonal produce daily — no frozen shortcuts.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="value-card">
+            <div class="value-icon">❤️</div>
+            <h5>Made with Love</h5>
+            <p>Every recipe is crafted with passion. Our chefs treat each dish as a small work of edible art.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="value-card">
+            <div class="value-icon">🌍</div>
+            <h5>Sustainable Choices</h5>
+            <p>Eco-friendly packaging, minimal food waste, and community composting — we care about the planet.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="value-card">
+            <div class="value-icon">🤝</div>
+            <h5>Community Roots</h5>
+            <p>From local hiring to neighbourhood events, we invest in the communities where we operate.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="section-pad" style="background: #fdf8f2;">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-5 mb-4 mb-md-0">
+          <div class="section-heading left">
+            <h2>Our Journey</h2>
+          </div>
+          <p style="color:#777;line-height:1.8;">Every great story has a beginning. Here are the key moments that shaped who we are today.</p>
+        </div>
+        <div class="col-md-7">
+          <ul class="timeline">
+            <li class="timeline-item">
+              <div class="timeline-dot">2010</div>
+              <div class="timeline-body">
+                <h6>The First Diner</h6>
+                <p>Marco and Elena open Feane's first location — a cozy 10-table diner in downtown New York with five signature dishes.</p>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <div class="timeline-dot">2013</div>
+              <div class="timeline-body">
+                <h6>Online Ordering Launch</h6>
+                <p>We introduced our online ordering platform, making Feane's flavours accessible to the whole city.</p>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <div class="timeline-dot">2017</div>
+              <div class="timeline-body">
+                <h6>Second & Third Locations</h6>
+                <p>Rapid growth led us to open two more branches, expanding our team to over 80 passionate food lovers.</p>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <div class="timeline-dot">2023</div>
+              <div class="timeline-body">
+                <h6>Sustainability Pledge</h6>
+                <p>We committed to 100% compostable packaging and partnered with local urban farms for zero food waste.</p>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <div class="timeline-dot">2025</div>
+              <div class="timeline-body">
+                <h6>Today & Beyond</h6>
+                <p>Serving 50,000+ happy guests monthly across 4 locations — and still growing with the same original passion.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section class="section-pad" style="background: #fff;">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Meet The Team</h2>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-sm-6 col-md-3">
+          <div class="team-card">
+            <div class="team-avatar">M</div>
+            <h5>Marco Reyes</h5>
+            <span>Head Chef & Co-Founder</span>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="team-card">
+            <div class="team-avatar">E</div>
+            <h5>Elena Reyes</h5>
+            <span>CEO & Co-Founder</span>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="team-card">
+            <div class="team-avatar">J</div>
+            <h5>Jordan Kim</h5>
+            <span>Pastry Chef</span>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="team-card">
+            <div class="team-avatar">A</div>
+            <h5>Aisha Patel</h5>
+            <span>Operations Manager</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-md-4">
+          <h5>Contact Us</h5>
+          <div class="footer-contact-item"><i class="bi bi-geo-alt-fill"></i><span>123 Food Street, New York, NY 10001</span></div>
+          <div class="footer-contact-item"><i class="bi bi-telephone-fill"></i><span>+01 123 456 7890</span></div>
+          <div class="footer-contact-item"><i class="bi bi-envelope-fill"></i><span>hello@feane.com</span></div>
+        </div>
+        <div class="col-md-4">
+          <a href="index.html" class="footer-logo">Feane</a>
+          <p>Serving delicious food with love since 2010. Quality ingredients and bold flavors — every single day.</p>
+          <div class="footer-social">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-pinterest"></i></a>
+          </div>
+        </div>
+        <div class="col-md-4 footer-hours">
+          <h5>Opening Hours</h5>
+          <p><span class="day">Monday — Friday</span></p>
+          <p>10:00 AM – 10:00 PM</p>
+          <p style="margin-top:10px"><span class="day">Saturday — Sunday</span></p>
+          <p>9:00 AM – 11:00 PM</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2025 Feane. All Rights Reserved. Designed with ♥ for food lovers.</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

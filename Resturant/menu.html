@@ -1,11 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Menu — Feane Restaurant</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Lato:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    
+  <div class="sub-hero">
+    <nav class="site-navbar navbar navbar-expand-lg" style="background: rgba(0,0,0,0.2);">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Feane</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMain">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item active"><a class="nav-link" href="menu.html">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="book.html">Book Table</a></li>
+          </ul>
+          <div class="nav-actions">
+            <a href="#"><i class="bi bi-person"></i></a>
+            <a href="#"><i class="bi bi-bag"></i></a>
+            <a href="#" class="btn-order">Order Online</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <h1>Our Menu</h1>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active">Menu</li>
+      </ol>
+    </nav>
+  </div>
+
+  
+  <section class="food-section section-pad">
+    <div class="container">
+
+      
+      <div class="section-heading">
+        <h2>Burgers</h2>
+      </div>
+      <div class="row mb-5">
+        <div class="col-sm-6 col-lg-4">
+          <div class="food-card">
+            <div class="food-card-img">🍔</div>
+            <div class="food-card-body">
+              <h5>Classic Cheeseburger</h5>
+              <p>Prime beef patty, cheddar, lettuce, tomato, pickles, and house sauce in a toasted brioche bun.</p>
+              <div class="food-card-footer">
+                <span class="food-price">$14</span>
+                <button class="btn-cart"><i class="bi bi-bag-plus"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="food-card">
+            <div class="food-card-img">🥓</div>
+            <div class="food-card-body">
+              <h5>Bacon BBQ Burger</h5>
+              <p>Double smash patty, crispy bacon, caramelized onions, BBQ sauce, and smoked gouda.</p>
+              <div class="food-card-footer">
+                <span class="food-price">$17</span>
+                <button class="btn-cart"><i class="bi bi-bag-plus"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="food-card">
+            <div class="food-card-img">🌱</div>
+            <div class="food-card-body">
+              <h5>Veggie Burger</h5>
+              <p>Spiced black bean patty, avocado, roasted peppers, arugula, and chipotle mayo.</p>
+              <div class="food-card-footer">
+                <span class="food-price">$13</span>
+                <button class="btn-cart"><i class="bi bi-bag-plus"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="section-heading">
+        <h2>Pizza</h2>
+      </div>
+      <div class="row mb-5">
+        <div class="col-sm-6 col-lg-4">
+          <div class="food-card">
+            <div class="food-card-img">🍕</div>
+            <div class="food-card-body">
+              <h5>Margherita</h5>
+              <p>San Marzano tomato, fresh mozzarella, basil, and a drizzle of extra virgin olive oil.</p>
+              <div class="food-card-footer">
+                <span class="food-price">$18</span>
+                <button class="btn-cart"><i class="bi bi-bag-plus"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="food-card">
+            <div class="food-card-img">🧄</div>
+            <div class="food-card-body">
+              <h5>Pepperoni & Garlic</h5>
+              <p>Generous pepperoni slices, roasted garlic, mozzarella, and chilli flakes on a crispy base.</p>
+              <div class="food-card-footer">
+                <span class="food-price">$20</span>
+                <button class="btn-cart"><i class="bi bi-bag-plus"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="food-card">
+            <div class="food-card-img">🫑</div>
+            <div class="food-card-body">
+              <h5>Garden Veggie</h5>
+              <p>Roasted zucchini, capsicum, mushroom, red onion, olives, and four-cheese blend.</p>
+              <div class="food-card-footer">
+                <span class="food-price">$19</span>
+                <button class="btn-cart"><i class="bi bi-bag-plus"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="section-heading">
+        <h2>Pasta</h2>
+      </div>
+      <div class="row mb-5">
+        <div class="col-sm-6 col-lg-4">
+          <div class="food-card">
+            <div class="food-card-img">🍝</div>
+            <div class="food-card-body">
+              <h5>Spaghetti Carbonara</h5>
+              <p>Spaghetti with pancetta, egg yolk, parmesan, and cracked black pepper. Pure Italian comfort.</p>
+              <div class="food-card-footer">
+                <span class="food-price">$16</span>
+                <button class="btn-cart"><i class="bi bi-bag-plus"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="food-card">
+            <div class="food-card-img">🍅</div>
+            <div class="food-card-body">
+              <h5>Penne Arrabbiata</h5>
+              <p>Penne tossed in a spicy San Marzano tomato sauce with garlic, basil, and chilli oil.</p>
+              <div class="food-card-footer">
+                <span class="food-price">$14</span>
+                <button class="btn-cart"><i class="bi bi-bag-plus"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="food-card">
+            <div class="food-card-img">🫙</div>
+            <div class="food-card-body">
+              <h5>Creamy Pesto Pasta</h5>
+              <p>Fusilli with a velvety basil pesto cream sauce, cherry tomatoes, pine nuts, and parmesan.</p>
+              <div class="food-card-footer">
+                <span class="food-price">$15</span>
+                <button class="btn-cart"><i class="bi bi-bag-plus"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="section-heading">
+        <h2>Fries &amp; Sides</h2>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-lg-4">
+          <div class="food-card">
+            <div class="food-card-img">🍟</div>
+            <div class="food-card-body">
+              <h5>Classic Fries</h5>
+              <p>Double-fried golden fries seasoned with sea salt and our signature spice blend.</p>
+              <div class="food-card-footer">
+                <span class="food-price">$7</span>
+                <button class="btn-cart"><i class="bi bi-bag-plus"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="food-card">
+            <div class="food-card-img">🧀</div>
+            <div class="food-card-body">
+              <h5>Loaded Cheese Fries</h5>
+              <p>Crispy fries smothered in cheddar cheese sauce, jalapeños, bacon bits, and sour cream.</p>
+              <div class="food-card-footer">
+                <span class="food-price">$10</span>
+                <button class="btn-cart"><i class="bi bi-bag-plus"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="food-card">
+            <div class="food-card-img">🥗</div>
+            <div class="food-card-body">
+              <h5>Garden Side Salad</h5>
+              <p>Mixed greens, cherry tomatoes, cucumber, and feta with lemon-herb vinaigrette.</p>
+              <div class="food-card-footer">
+                <span class="food-price">$8</span>
+                <button class="btn-cart"><i class="bi bi-bag-plus"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-md-4">
+          <h5>Contact Us</h5>
+          <div class="footer-contact-item"><i class="bi bi-geo-alt-fill"></i><span>123 Food Street, New York, NY 10001</span></div>
+          <div class="footer-contact-item"><i class="bi bi-telephone-fill"></i><span>+01 123 456 7890</span></div>
+          <div class="footer-contact-item"><i class="bi bi-envelope-fill"></i><span>hello@feane.com</span></div>
+        </div>
+        <div class="col-md-4">
+          <a href="index.html" class="footer-logo">Feane</a>
+          <p>Serving delicious food with love since 2010. Quality ingredients and bold flavors — every single day.</p>
+          <div class="footer-social">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-pinterest"></i></a>
+          </div>
+        </div>
+        <div class="col-md-4 footer-hours">
+          <h5>Opening Hours</h5>
+          <p><span class="day">Monday — Friday</span></p>
+          <p>10:00 AM – 10:00 PM</p>
+          <p style="margin-top:10px"><span class="day">Saturday — Sunday</span></p>
+          <p>9:00 AM – 11:00 PM</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2025 Feane. All Rights Reserved. Designed with ♥ for food lovers.</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
