@@ -6,7 +6,7 @@ async function getWeather() {
 
     const { latitude, longitude } = await getGeoLocation(cityName);
 
-    // Weather API
+
     const WEATHER_API =
         `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${API_KEY}`;
 
@@ -16,7 +16,7 @@ async function getWeather() {
 
     console.log(data);
 
-    // Convert Kelvin to Celsius
+   
     const temperature = data.main.temp - 273.15;
 
     document.getElementById("temp").innerText =
