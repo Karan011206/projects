@@ -3,16 +3,7 @@ const API_KEY = "fca_live_CyTiLH2aOEp6Ail4xFKrK57knMtDaaKwa4w5MXfb";
 const countryCurrency = {
     india: "INR",
     usa: "USD",
-    "united states": "USD",
-    europe: "EUR",
-    germany: "EUR",
-    france: "EUR",
-    japan: "JPY",
-    china: "CNY",
-    uk: "GBP",
-    england: "GBP",
-    canada: "CAD",
-    australia: "AUD"
+   
 };
 
 async function convertCurrency() {
@@ -38,6 +29,6 @@ async function convertCurrency() {
 
     const convertedAmount = amount * rate;
 
-    document.getElementById("result").innerText =
-        `${amount} ${fromCurrency} = ${convertedAmount.toFixed(2)} ${toCurrency}`;
+    document.getElementById("result").innerText = `${amount} ${fromCurrency} = ${convertedAmount.toFixed(2)} ${toCurrency}`;
+       
 }
